@@ -4,7 +4,7 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    width: 5rem;
+    width: 8.875rem;
     height: 100vh;
     box-shadow: 0.063rem 0 1.25rem 0 #8690a3;
 
@@ -13,7 +13,6 @@
         align-items: center;
         padding: 0.938rem 0.938rem 0 0.938rem;
         width: 100%;
-
         img{
             width: 100%;
             height: auto;  
@@ -60,7 +59,7 @@
 
 .sidenav-nav{
     list-style:  none;
-    padding: 0.938rem;
+    padding: 2.188rem;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -70,20 +69,22 @@
     
     .sidenav-nav-item{
         width: 100%;
-        margin-bottom: 0.625rem;
+        margin-bottom: 1rem;
 
         .sidenav-nav-link{
             display: flex;
             align-items: center;
-            height: 3rem;
+            height: 4.063rem;
             color: #f3f3f3;
             text-decoration: none;
             border-radius: 0.625rem;
             transition: all .3s ease;
+            justify-content: center;
+
 
             
             .sidenav-link-icon{
-                font-size: 22px;
+                font-size: 30px;
                 width: 2rem;
                 min-width: 2rem;
                 margin: 0 0.5rem;
@@ -115,4 +116,9 @@
     .sidenav-link-text{
         color: #f3f3f3;  
     }
+}
+
+#Profil{
+    margin-top: auto;
+    margin-bottom: 4.063rem;
 }

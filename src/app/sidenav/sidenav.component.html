@@ -9,7 +9,7 @@
     </div>
 
         <ul class="sidenav-nav">
-            <li class="sidenav-nav-item" *ngFor="let data of navData">
+            <li class="sidenav-nav-item" *ngFor="let data of navData" [id]="data.label">
                 <a href="" class="sidenav-nav-link" [routerLink]="[data.routeLink]"
                 routerLinkActive="active"
                 [routerLinkActiveOptions]="{exact: true}">
