@@ -60,7 +60,7 @@
         }
     }
     .precuvant-body{
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
         p{
             text-align: center;
@@ -83,18 +83,19 @@
         }
         .articol-content{
             font-family: Rock-well;
-            font-weight: 500;
             text-align: center;
             position: absolute;
             width: 220px;
             left: 10%;
             top: 17%;
             .articol-content-text-title{
-                font-size: 20px;
+                font-size: 22px;
             }
             .articol-content-text-body{
                 margin-top: 10px;
-                font-size: 15px;
+                p{
+                    font-size: 18px;
+                  }
             }
             img{
                 width: 160px;
@@ -104,6 +105,7 @@
 }
 
 .feedback-container {
+    
     color: #233D3C;
     margin-top:70px ;
     font-family: Rock-well;
@@ -120,15 +122,24 @@
         }
     }
     .feedback-body{
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
+       
+        img{
+            position: relative;
+            cursor: pointer;
+        }
+        .feedback-text-button{
+            cursor: pointer;
+            left: 44.5%;
+            bottom: 9%;
+            color: #F4FFFE;
+            position: absolute;
+        }
         .feedback-button{
             margin-top: 35px;
             margin-bottom: 50px;
             text-align: center;
-            // img{
-                
-            // }
         }
         p{
             text-align: center;
