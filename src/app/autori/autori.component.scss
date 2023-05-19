@@ -33,6 +33,7 @@
     img{
         width: 80%;
     }
+    
 }
 .autor-container{
     .Flip2{
@@ -40,10 +41,16 @@
     }
 }
 .autor-container:hover{
+   
     .Flip1{
+       
         display: none;
     }
     .Flip2{
+        margin-top: 10px;
+        p{
+            font-size: 22px;
+        }
         display: inline;
     }
 }
