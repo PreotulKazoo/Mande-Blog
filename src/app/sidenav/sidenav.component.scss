@@ -1,3 +1,5 @@
+
+
 .sidenav{
     background:  #233D3C;
     transition: all .5s ease;
@@ -13,6 +15,28 @@
         align-items: center;
         padding: 0.938rem 0.938rem 0 0.938rem;
         width: 100%;
+        justify-content: space-around;
+        .logo-shape {
+            background: #40ADA7;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            
+            .logo-hashtag{
+            color: #F4FFFE;
+            font-size: 30px;
+            }
+            .logo-shifted{
+            margin-left: 60px;
+            transition: all .5s ease;
+            }
+          }
+         
         img{
             width: 100%;
             height: auto;  
@@ -26,15 +50,6 @@
             font-weight: 900;
             cursor: pointer;
             border: none;
-        }
-        .logo-text{
-            // margin-left: 1.5rem;
-            // font-size: 24px;
-            // font-weight: 700;
-            // color: #F4FFFE;
-            width: 113px;
-            height: 96px;
-            background-image: url("/assets/Logo.png");
         }
         
         .btn-close{
@@ -55,6 +70,9 @@
 
 .sidenav-collapsed{
     width: 16.5625rem;
+    .logo-container{
+        padding: 0.938rem 2.188rem 0 2.188rem
+    }
 }
 
 .sidenav-nav{
