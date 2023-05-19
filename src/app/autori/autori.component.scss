@@ -34,9 +34,17 @@
         width: 80%;
     }
 }
+.autor-container{
+    .Flip2{
+        display: none;
+    }
+}
 .autor-container:hover{
     .Flip1{
         display: none;
+    }
+    .Flip2{
+        display: inline;
     }
 }
 
