@@ -105,7 +105,7 @@
 }
 
 .feedback-container {
-    
+
     color: #233D3C;
     margin-top:70px ;
     font-family: Rock-well;
@@ -124,17 +124,16 @@
     .feedback-body{
         width: 70%;
         margin: 0 auto;
-       
+
         img{
             position: relative;
             cursor: pointer;
         }
         .feedback-text-button{
             cursor: pointer;
-            left: 44.5%;
-            bottom: 9%;
+            margin-top: -95px;
             color: #F4FFFE;
-            position: absolute;
+            position: relative;
         }
         .feedback-button{
             margin-top: 35px;

@@ -1,84 +1,64 @@
 @font-face{
     src: URL(../../assets/ROCK.TTF);
     font-family: Rock-well;
-}
-.autori-container{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    
-}
-.autor-container{
+  }
+  .flip-card {
+    font-family: Rock-well;
+    background-color: transparent;
+    margin-top: 70px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  .flip-card-inner {
     position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    .autor-head{
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 30px;
+    }
+    .autor-description{
+      margin: 0 auto;
+      margin-top: 25px;
+      font-size: 21px;
+      width: 75%;
+    }
+    position: absolute;
+    top: 12%;
+  }
+  
+  .flip-card-back {
     .autori-body{
-        font-family: Rock-well;
-        width: 60%;
-        text-align: center;
-        position: absolute;
-        top: 13%;
-        left: 10%;
-        .autor-head{
-            margin-top: 7px;
-            font-size: 25px;
-            font-weight: bold;
-        }
-        .autor-description{
-            margin-top: 10px;
-            font-size: 18px;
-        }
-        img{
-            width: 70%;
-        }
+      width: 70%;
+      margin: 46px auto;
+      font-size: 25px;
     }
-    img{
-        width: 80%;
-    }
-    
-}
-.autor-container{
-    .Flip2{
-        display: none;
-    }
-}
-.autor-container:hover{
-   
-    .Flip1{
-       
-        display: none;
-    }
-    .Flip2{
-        margin-top: 10px;
-        p{
-            font-size: 22px;
-        }
-        display: inline;
-    }
-}
-
-// .flip-card-inner {
-
-//     transition: transform 0.6s;
-//     transform-style: preserve-3d;
-//     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-//   }
+    position: absolute;
+    top: 12%;
+    transform: rotateY(180deg);
+  }
+  .autori-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
   
-//   .flip-card:hover .flip-card-inner {
-//     transform: rotateY(180deg);
-//   }
-  
-//   .flip-card-front, .flip-card-back {
-//     position: absolute;
-   
-//     -webkit-backface-visibility: hidden;
-//     backface-visibility: hidden;
-//   }
-  
-//   .flip-card-front {
-//     background-color: #bbb;
-//     color: black;
-//   }
-  
-//   .flip-card-back {
-
-//     transform: rotateY(180deg);
-//   }
