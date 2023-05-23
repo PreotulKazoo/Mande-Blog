@@ -19,10 +19,9 @@
         padding-top: 15px;
     }
     img{
-        width: 11%;
+        width: 15rem;
     }
     .title-middle{
-
         width: 27%;
         font-family:Old-English ;
         font-size: 43px;
@@ -75,19 +74,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     .articol-container{
         position: relative;
         margin: 70px 24px 0 24px ;
         img{
-            width: 270px;
+            width: 91%;
         }
         .articol-content{
             font-family: Rock-well;
             text-align: center;
-            position: absolute;
+            position: relative;
             width: 220px;
-            left: 10%;
-            top: 17%;
+            margin: 0 auto;
+            margin-bottom: 30%;
+            margin-top: -112%;
             .articol-content-text-title{
                 font-size: 22px;
             }
@@ -146,6 +147,5 @@
             font-size: 25px;
             margin-top: 40px;
         }
-
     }
 }
