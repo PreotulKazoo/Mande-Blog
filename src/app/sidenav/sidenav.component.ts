@@ -19,6 +19,7 @@ export class SidenavComponent implements OnInit {
   screenWidth = 0;
   collapsed = false;
   navData = navbarData;
+  tabletSize = false;
   
   //-la functia aceasta '@HostListener onResize' face sa nu se mai acea mutare a body-ului...
   // ... spre dreapta si face direct ovelay meniului-
@@ -30,7 +31,13 @@ export class SidenavComponent implements OnInit {
   //     this.onToggleSideNav.emit({collapsed: this.collapsed, screenWidth: this.screenWidth});
   //   }
   // }
-
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.screenWidth = window.innerWidth;
+    if(this.screenWidth <= 1200){
+      this.collapsed = false;
+    }
+  }
 
   ngOnInit(): void {
     this.screenWidth = window.innerWidth;
@@ -38,7 +45,13 @@ export class SidenavComponent implements OnInit {
 
   toggleCollapse(): void {
     this.collapsed = !this.collapsed;
+    if(this.screenWidth > 1200){
     this.onToggleSideNav.emit({collapsed: this.collapsed, screenWidth: this.screenWidth});
+      this.tabletSize = false;
+    }else if(this.screenWidth < 1200){
+      this.tabletSize = true;
+      this.collapsed = false;
+    }
   }
 
   closeSidenav(): void{
