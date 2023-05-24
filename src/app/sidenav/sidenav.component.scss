@@ -1,4 +1,8 @@
 
+@font-face{
+    src: URL(../../assets/ROCK.TTF);
+    font-family: Rock-well;
+  }
 
 .sidenav{
     background:  #233D3C;
@@ -16,6 +20,7 @@
         padding: 0.938rem 0.938rem 0 0.938rem;
         width: 100%;
         justify-content: space-around;
+        font-family: Rock-well;
         .logo-shape {
             background: #40ADA7;
             width: 96px;
@@ -32,7 +37,7 @@
             font-size: 30px;
             }
             .logo-shifted{
-            margin-left: 60px;
+            margin-left: 70px;
             transition: all .5s ease;
             }
           }
@@ -139,4 +144,43 @@
 #Profil{
     margin-top: auto;
     margin-bottom: 4.063rem;
+}
+
+/* Extra small devices (phones, 600px and down */
+@media only screen and (min-width: 480px){}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 480){}
+
+/* Medium devices (landscape tablets, 768px and up */
+@media only screen and (max-width: 768px){}
+
+/* Large devices (Laptops/desktops, 992px and up*/
+@media only screen and (max-width: 1024px){}
+
+@media only screen and (max-width: 1200px){
+    .sidenav{
+        width:7.5rem;
+        .logo-container{
+            .logo-shape {
+                width: 76px;
+                height: 76px;
+                .logo-hashtag{
+                font-size: 25px;
+                }
+            }
+        }
+    }
+    .sidenav-nav{
+        .sidenav-nav-item{
+            .sidenav-nav-link{
+                height: 3.25rem;
+                .sidenav-link-icon{
+                    font-size: 25px;
+                }
+            }
+            
+        }
+    }
+    
 }
