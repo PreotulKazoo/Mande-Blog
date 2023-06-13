@@ -1,4 +1,35 @@
+<!-- <div class="sidenav-mobile">
+    <a href="#acasa" class="active">Acasa</a>
+    <a href="#articole">Articole</a>
+    <a href="#autori">Autori</a>
+    <a href="#Profil">Profil</a>
+</div> -->
+<div class="sidenav-mobile">
+    <div class="logo-container">
+        <!-- <button class="logo" (click)="toggleCollapse()">B</button> -->
+        <!-- <img src="/assets/Logo.png" width="460" height="345" (click)="toggleCollapse()"> -->
+        
+        <div class="logo-shape">
+            <div class="logo-shape-outline">
+            </div>
+            <p class="logo-hashtag" >#blog</p>
+        </div>
+    </div>
+
+        <ul class="sidenav-nav">
+            <li class="sidenav-nav-item" *ngFor="let data of navData" [id]="data.label">
+                <a href="" class="sidenav-nav-link" [routerLink]="[data.routeLink]"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                    <i class="sidenav-link-icon" [class]="data.icon"></i>
+                    <!-- <span class="sidenav-link-text" *ngIf="collapsed">{{data.label}}</span> -->
+                </a>
+            </li>
+        </ul>
+
+</div>
 <div class="body"  [ngClass]="getBodyClass()">
+
     <router-outlet>
         
     </router-outlet>

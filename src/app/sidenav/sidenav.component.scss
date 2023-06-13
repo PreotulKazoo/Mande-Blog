@@ -155,8 +155,7 @@
 /* Medium devices (landscape tablets, 768px and up */
 @media only screen and (max-width: 768px){}
 
-/* Large devices (Laptops/desktops, 992px and up*/
-@media only screen and (max-width: 1024px){}
+
 
 @media only screen and (max-width: 1200px){
     .sidenav{
@@ -179,8 +178,20 @@
                     font-size: 25px;
                 }
             }
-            
         }
     }
-    
+}
+/* Large devices (Laptops/desktops, 992px and up*/
+@media only screen and (max-width: 1024px){
+    .sidenav{
+        width:6.25rem;
+    }
+    .sidenav-nav{
+        padding: 1.188rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .sidenav{
+        display: none;
+    }
 }

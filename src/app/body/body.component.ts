@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-
+import { navbarData } from './nav-data-bottom'
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',
@@ -9,6 +9,8 @@ export class BodyComponent {
 
   @Input() collapsed = false;
   @Input() screenWidth = 0;
+
+  navData = navbarData;
 
   getBodyClass(): string {
     let styleClass = '';
