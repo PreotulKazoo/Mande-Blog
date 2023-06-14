@@ -1,194 +1,187 @@
-.body{
-    width: calc(100% - 8.875rem);
-    // height: 100vh;
-    margin-left: 8.875rem;
-    z-index: 0;
-    position: relative;
-    top: 0;
-    transition: all .5s ease;
-    background: #F4FFFE;
+.body {
+  width: calc(100% - 8.875rem);
+  // height: 100vh;
+  margin-left: 8.875rem;
+  z-index: 0;
+  position: relative;
+  top: 0;
+  transition: all 0.5s ease;
+  background: #f4fffe;
+}
+
+.body-trimmed {
+  width: calc(100% - 16.5625rem);
+  margin-left: 16.5625rem;
+}
+.body-md-screen {
+  width: calc(100% - 8.875rem);
+  margin-left: 8.875rem;
+}
+
+@media screen and (min-width: 768px) {
+  .body {
     padding: 3rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .body {
+    width: calc(100% - 7.5rem);
+    // height: 100vh;
+    margin-left: 7.5rem;
+  }
 }
 
-.body-trimmed{
-    width: calc(100% - 16.5625rem);
-    margin-left: 16.5625rem;
-}
-.body-md-screen{
-    width: calc(100% - 8.875rem);
-    margin-left: 8.875rem;
-}
-
-@media only screen and (max-width: 1200px){
-    .body{
-        width: calc(100% - 7.5rem);
-        // height: 100vh;
-        margin-left: 7.5rem;
-        
-    }
+@media only screen and (max-width: 1024px) {
+  .body {
+    width: calc(100% - 6.25rem);
+    // height: 100vh;
+    margin-left: 6.25rem;
+  }
 }
 
-@media only screen and (max-width: 1024px){
-    .body{
-        width: calc(100% - 6.25rem);
-        // height: 100vh;
-        margin-left: 6.25rem;
-        
-    }
+.sidenav-mobile {
+  display: none;
 }
-
-.sidenav-mobile{
-    display: none;
-}
-@media only screen and (max-width: 768px){
-    
-    .body{
-        margin-left: 0;
-        width: 100%;
-    }
-    .sidenav-mobile{
-        display: block;
-        background:  #233D3C;
-        position: fixed;
-        bottom: 0;
-        height: 55px;
-        width: 100%;
-        z-index: 1;
-        box-shadow: 0.063rem 0 1.25rem 0 #8690a3;
-        transition: all .5s ease;
-        .logo-container{
-            display: flex;
-            align-items: center;
-            width: 100%;
-            justify-content: space-around;
-            font-family: Rock-well;
-            position: absolute;
-            z-index: -1;
-             margin-left: 5px; //normal este centrat logo-ul dar pare putin spre stanga si asta rezolva prolema
-            .logo-shape {
-                background: #40ADA7;
-                width: 45px;
-                height: 45px;
-                border-radius: 50%;
-                display: flex;
-                cursor: pointer;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                .logo-shape-outline{
-                    position: absolute;
-                    width: 58px;
-                    height: 58px;
-                    border-radius: 50%;
-                    background: #233D3C;
-                    z-index: -1;
-                }
-                .logo-hashtag{
-                color: #F4FFFE;
-                font-size: 14px;
-                }
-                .logo-shifted{
-                margin-left: 70px;
-                transition: all .5s ease;
-                }
-              }
-             
-            img{
-                width: 100%;
-                height: auto;  
-            }
-            .logo{
-                background-color: #fff;
-                text-align: center;
-                width: 2rem;
-                border-radius: 0.143rem;
-                font-size: 12px;
-                font-weight: 900;
-                cursor: pointer;
-                border: none;
-            }
-            
-            .fa-times {
-                color: #F4FFFE;
-                font-size: 24px;
-            }
-        }
-    }
-    .sidenav-nav{
-        list-style:  none;
-        padding: 10px;
-        margin: 0;
+@media only screen and (max-width: 768px) {
+  .body {
+    margin-left: 0;
+    width: 100%;
+  }
+  .sidenav-mobile {
+    display: block;
+    background: #233d3c;
+    position: fixed;
+    bottom: 0;
+    height: 55px;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0.063rem 0 1.25rem 0 #8690a3;
+    transition: all 0.5s ease;
+    .logo-container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-around;
+      font-family: Rock-well;
+      position: absolute;
+      z-index: -1;
+      margin-left: 5px; //normal este centrat logo-ul dar pare putin spre stanga si asta rezolva prolema
+      .logo-shape {
+        background: #40ada7;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
         display: flex;
-        flex-direction: row;
-        align-items: center;
         cursor: pointer;
-        
-        .sidenav-nav-item{
-            width: 100%;
-            margin-bottom: 1rem;
-            display: flex;
-    
-            .sidenav-nav-link{
-                display: flex;
-                align-items: center;
-                height: 2.563rem;
-                color: #f3f3f3;
-                text-decoration: none;
-                border-radius: 0.625rem;
-                transition: all .3s ease;
-                justify-content: center;
-                width: 50px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        .logo-shape-outline {
+          position: absolute;
+          width: 58px;
+          height: 58px;
+          border-radius: 50%;
+          background: #233d3c;
+          z-index: -1;
+        }
+        .logo-hashtag {
+          color: #f4fffe;
+          font-size: 14px;
+        }
+        .logo-shifted {
+          margin-left: 70px;
+          transition: all 0.5s ease;
+        }
+      }
 
-                .sidenav-link-icon{
-                    font-size: 30px;
-                    width: 2.5rem;
-                    min-width: 1rem;
-                    margin: 0 0.5rem;
-                    text-align: center;
-                }
-                .sidenav-link-text{
-                    margin-left: 1.5rem;
-                    font-size: 12px;
-                }
-            }
-    
-        }
-        .sidenav-nav-item:hover{
-            .sidenav-nav-link{
-            background-color: #f3f3f3;
-            }
-            .sidenav-link-icon,
-            .sidenav-link-text{
-            color: #233D3C;
-     
-            }
-        }
-    }
-    
-    .active {
-        background-color: #40ADA7;
-    
-        .sidenav-link-icon,
-        .sidenav-link-text{
-            color: #f3f3f3;  
-        }
-    }
-    
-    #Profil{
-        margin-top: auto;
-        justify-content: end;
-    }
-    #Autori{
-        justify-content: end;
-    }
-    #Acasa, #Articole{
-        justify-content: start;
-    }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .logo {
+        background-color: #fff;
+        text-align: center;
+        width: 2rem;
+        border-radius: 0.143rem;
+        font-size: 12px;
+        font-weight: 900;
+        cursor: pointer;
+        border: none;
+      }
 
+      .fa-times {
+        color: #f4fffe;
+        font-size: 24px;
+      }
+    }
+  }
+  .sidenav-nav {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    .sidenav-nav-item {
+      width: 100%;
+      margin-bottom: 1rem;
+      display: flex;
+
+      .sidenav-nav-link {
+        display: flex;
+        align-items: center;
+        height: 2.563rem;
+        color: #f3f3f3;
+        text-decoration: none;
+        border-radius: 0.625rem;
+        transition: all 0.3s ease;
+        justify-content: center;
+        width: 50px;
+
+        .sidenav-link-icon {
+          font-size: 30px;
+          width: 2.5rem;
+          min-width: 1rem;
+          margin: 0 0.5rem;
+          text-align: center;
+        }
+        .sidenav-link-text {
+          margin-left: 1.5rem;
+          font-size: 12px;
+        }
+      }
+    }
+    .sidenav-nav-item:hover {
+      .sidenav-nav-link {
+        background-color: #f3f3f3;
+      }
+      .sidenav-link-icon,
+      .sidenav-link-text {
+        color: #233d3c;
+      }
+    }
+  }
+
+  .active {
+    background-color: #40ada7;
+
+    .sidenav-link-icon,
+    .sidenav-link-text {
+      color: #f3f3f3;
+    }
+  }
+
+  #Profil {
+    margin-top: auto;
+    justify-content: end;
+  }
+  #Autori {
+    justify-content: end;
+  }
+  #Acasa,
+  #Articole {
+    justify-content: start;
+  }
 }
-
-
-
-
-
-
